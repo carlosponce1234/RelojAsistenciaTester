@@ -22,7 +22,7 @@ namespace RelojAsistenciaTester.DeviceManager
             IpAdress = ipAdress;
             Port = port;
             UseTcp = useTcp;
-            _zkTeco = new ZkTeco(IpAdress);
+            _zkTeco = new ZkTeco(IpAdress, Port, UseTcp);
         }
 
 

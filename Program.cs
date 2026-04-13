@@ -26,6 +26,13 @@ namespace RelojAsistenciaTester
             var clockDevice = NewDevice(name, ubicacion, ipAdress, port, useTcp);
             clockDevice.DisplayInfo();
             clockDevice.ConectDivice();
+
+            Console.WriteLine("================================================");
+            Console.WriteLine("INFORMACION DEL DISPOSITIVO");
+            Console.WriteLine("================================================");
+            clockDevice.GetDeviceInfo();
+            Console.WriteLine("================================================");
+
             Console.WriteLine("Presione cualquier tecla para desconectar el dispositivo...");
             Console.ReadKey();
             clockDevice.DisconnectDevice();
